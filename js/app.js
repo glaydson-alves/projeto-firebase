@@ -123,6 +123,11 @@ btnAtualizar.addEventListener("click",(evento)=>{
     evento.preventDefault()
     atualizarTarefa()
     consultarTarefa()
+    if(formAtualizar.classList.contains("d-block")){
+        formCadastrar.classList.replace("d-none", "d-block")
+        formAtualizar.classList.replace("d-block", "d-none")
+    }
+
 })
 
 consultarTarefa()
